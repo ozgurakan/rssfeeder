@@ -36,5 +36,6 @@ dynamodb_table = 'rssfeedlogs'
 poster = MyPoster('https://aRestInterface.com/post')
 
 feeder = Feeder(feed_url, dynamodb_table, poster)
+feeder.process_feeds()
 
 ```
